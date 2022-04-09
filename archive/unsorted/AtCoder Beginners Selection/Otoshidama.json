@@ -1,0 +1,49 @@
+{
+  "name" : "Otoshidama",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "9 45000",
+    "output" : "0 9 0",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "20 196000",
+    "output" : "-1 -1 -1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1000 1234000",
+    "output" : "14 27 959",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "2000 20000000",
+    "output" : "2000 0 0",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main/java/tasks",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "main.java.tasks.Otoshidama",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "",
+  "contestName" : "AtCoder Beginners Selection",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

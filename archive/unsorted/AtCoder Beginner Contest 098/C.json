@@ -1,0 +1,44 @@
+{
+  "name" : "C",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\nWEEWW",
+    "output" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "12\nWEWEWEEEWWWE",
+    "output" : "4",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "8\nWWWWWEEE",
+    "output" : "3",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main/java/tasks",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "tasks.C",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "",
+  "contestName" : "AtCoder Beginner Contest 098",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,54 @@
+{
+  "name" : "B",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 8 2",
+    "output" : "3",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "0 5 1",
+    "output" : "6",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "9 9 2",
+    "output" : "0",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1 1000000000000000000 3",
+    "output" : "333333333333333333",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "0 11 5",
+    "output" : "3",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "src/main/java/tasks",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "tasks.B",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "",
+  "contestName" : "AtCoder Beginner Contest 048",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('libs/chelper.jar')
+    implementation 'commons-lang:commons-lang:2.6'
+    implementation 'org.json:json:20180130'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.7.4'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.7.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.7.4'
+}
+
+test {
+    useJUnitPlatform()
+}

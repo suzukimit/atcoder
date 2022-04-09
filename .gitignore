@@ -1,0 +1,19 @@
+# Gradle
+.gradle
+build
+out
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# App
+logs
+
+# CHelper
+*.template
+out
+output
+CHelperReport.txt

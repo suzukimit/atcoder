@@ -1,0 +1,44 @@
+{
+  "name" : "Kagami Mochi",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n10\n8\n8\n6",
+    "output" : "3",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n15\n15\n15",
+    "output" : "1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "7\n50\n30\n50\n100\n50\n80\n30",
+    "output" : "4",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main/java/tasks",
+  "vmArgs" : "-Xmx256m -Xss64m",
+  "mainClass" : "Main",
+  "taskClass" : "main.java.tasks.KagamiMochi",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "",
+  "contestName" : "AtCoder Beginners Selection",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
