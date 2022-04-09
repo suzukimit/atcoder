@@ -1,5 +1,5 @@
 {
-  "name" : "Task",
+  "name" : "C",
   "testType" : "SINGLE",
   "input" : {
     "type" : "STANDARD",
@@ -9,16 +9,36 @@
     "type" : "STANDARD",
     "fileName" : "output.txt"
   },
-  "tests" : [ ],
+  "tests" : [ {
+    "input" : "3 3\n1 2\n2 3\n3 2\n",
+    "output" : "7",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 0",
+    "output" : "3",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4 4\n1 2\n2 3\n3 4\n4 1",
+    "output" : "16",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "3 4\n1 2\n2 3\n3 1\n3 2",
+    "output" : "9",
+    "index" : 3,
+    "active" : true
+  } ],
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",
   "mainClass" : "Main",
-  "taskClass" : "tasks.Task",
+  "taskClass" : "tasks.C",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
   "date" : "",
-  "contestName" : "AtCoder Beginner Contest 116",
+  "contestName" : "AtCoder Beginner Contest 204",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",

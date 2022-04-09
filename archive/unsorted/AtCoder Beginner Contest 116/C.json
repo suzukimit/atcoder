@@ -1,5 +1,5 @@
 {
-  "name" : "Task",
+  "name" : "C",
   "testType" : "SINGLE",
   "input" : {
     "type" : "STANDARD",
@@ -13,7 +13,7 @@
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",
   "mainClass" : "Main",
-  "taskClass" : "tasks.Task",
+  "taskClass" : "tasks.C",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
