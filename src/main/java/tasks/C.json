@@ -1,5 +1,5 @@
 {
-  "name" : "Grid Repainting 2",
+  "name" : "C",
   "testType" : "SINGLE",
   "input" : {
     "type" : "STANDARD",
@@ -9,31 +9,16 @@
     "type" : "STANDARD",
     "fileName" : "output.txt"
   },
-  "tests" : [ {
-    "input" : "3 3\n.#.\n###\n.#.",
-    "output" : "Yes",
-    "index" : 0,
-    "active" : true
-  }, {
-    "input" : "5 5\n#.#.#\n.#.#.\n#.#.#\n.#.#.\n#.#.#",
-    "output" : "No",
-    "index" : 1,
-    "active" : true
-  }, {
-    "input" : "11 11\n...#####...\n.##.....##.\n#..##.##..#\n#..##.##..#\n#.........#\n#...###...#\n.#########.\n.#.#.#.#.#.\n##.#.#.#.##\n..##.#.##..\n.##..#..##.",
-    "output" : "Yes",
-    "index" : 2,
-    "active" : true
-  } ],
+  "tests" : [ ],
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",
   "mainClass" : "Main",
-  "taskClass" : "main.java.tasks.GridRepainting2",
+  "taskClass" : "tasks.C",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
   "date" : "",
-  "contestName" : "AtCoder Beginners Contest 096",
+  "contestName" : "AtCoder Beginner Contest 248",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",

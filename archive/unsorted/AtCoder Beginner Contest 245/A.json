@@ -1,5 +1,5 @@
 {
-  "name" : "Otoshidama",
+  "name" : "A",
   "testType" : "SINGLE",
   "input" : {
     "type" : "STANDARD",
@@ -10,35 +10,35 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "9 45000",
-    "output" : "0 9 0",
+    "input" : "7 0 6 30",
+    "output" : "Aoki",
     "index" : 0,
     "active" : true
   }, {
-    "input" : "20 196000",
-    "output" : "-1 -1 -1",
+    "input" : "7 30 7 30",
+    "output" : "Takahashi",
     "index" : 1,
     "active" : true
   }, {
-    "input" : "1000 1234000",
-    "output" : "14 27 959",
+    "input" : "0 0 23 59",
+    "output" : "Takahashi",
     "index" : 2,
     "active" : true
   }, {
-    "input" : "2000 20000000",
-    "output" : "2000 0 0",
+    "input" : "10 0 10 0",
+    "output" : "Takahashi",
     "index" : 3,
     "active" : true
   } ],
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",
   "mainClass" : "Main",
-  "taskClass" : "main.java.tasks.Otoshidama",
+  "taskClass" : "main.java.tasks.A",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
   "date" : "",
-  "contestName" : "AtCoder Beginner Selection",
+  "contestName" : "AtCoder Beginner Contest 245",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",
