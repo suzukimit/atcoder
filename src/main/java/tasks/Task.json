@@ -9,7 +9,27 @@
     "type" : "STANDARD",
     "fileName" : "output.txt"
   },
-  "tests" : [ ],
+  "tests" : [ {
+    "input" : "1",
+    "output" : "1",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2",
+    "output" : "2",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3",
+    "output" : "6",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "4",
+    "output" : "24",
+    "index" : 3,
+    "active" : true
+  } ],
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",
   "mainClass" : "Main",
@@ -17,8 +37,8 @@
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
-  "date" : "",
-  "contestName" : "AtCoder Beginner Contest 116",
+  "date" : "2022.04.20",
+  "contestName" : "",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",
