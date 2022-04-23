@@ -10,28 +10,28 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "1 4 2",
-    "output" : "2",
+    "input" : "Atcoder",
+    "output" : "Yes",
     "index" : 0,
     "active" : true
   }, {
-    "input" : "7 7 10",
-    "output" : "0",
+    "input" : "Aa",
+    "output" : "Yes",
     "index" : 1,
     "active" : true
   }, {
-    "input" : "31 415926 5",
-    "output" : "6",
+    "input" : "atcoder",
+    "output" : "No",
     "index" : 2,
     "active" : true
   }, {
-    "input" : "8 7 10",
-    "output" : "0",
+    "input" : "Perfect",
+    "output" : "No",
     "index" : 3,
     "active" : true
   }, {
-    "input" : "5 10 2",
-    "output" : "1",
+    "input" : "a",
+    "output" : "No",
     "index" : 4,
     "active" : true
   } ],
@@ -43,7 +43,7 @@
   "checkerParameters" : "",
   "testClasses" : [ ],
   "date" : "",
-  "contestName" : "AtCoder Beginner Contest 248",
+  "contestName" : "AtCoder Beginner Contest 249",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",

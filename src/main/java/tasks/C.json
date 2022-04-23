@@ -9,7 +9,22 @@
     "type" : "STANDARD",
     "fileName" : "output.txt"
   },
-  "tests" : [ ],
+  "tests" : [ {
+    "input" : "4 2\nabi\naef\nbc\nacg",
+    "output" : "3",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2 2\na\nb",
+    "output" : "0",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 2\nabpqxyz\naz\npq\nbc\ncy",
+    "output" : "7",
+    "index" : 2,
+    "active" : true
+  } ],
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",
   "mainClass" : "Main",
@@ -18,7 +33,7 @@
   "checkerParameters" : "",
   "testClasses" : [ ],
   "date" : "",
-  "contestName" : "AtCoder Beginner Contest 248",
+  "contestName" : "AtCoder Beginner Contest 249",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",
