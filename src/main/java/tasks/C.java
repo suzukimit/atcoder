@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.io.PrintWriter;
 
+/**
+ * 【要復習】
+ * bit全探索が使えるのはわかったが、文字数をカウントするロジックが非効率でTLEが2個
+ */
 public class C {
     public void solve(int testNumber, Scanner in, PrintWriter out) {
         int n = in.nextInt();
