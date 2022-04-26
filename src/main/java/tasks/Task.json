@@ -10,24 +10,9 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "1",
-    "output" : "1",
+    "input" : "b0c2b89f-4862-4814-8728-ddb0b36076ba 40",
+    "output" : "2429432",
     "index" : 0,
-    "active" : true
-  }, {
-    "input" : "2",
-    "output" : "2",
-    "index" : 1,
-    "active" : true
-  }, {
-    "input" : "3",
-    "output" : "6",
-    "index" : 2,
-    "active" : true
-  }, {
-    "input" : "4",
-    "output" : "24",
-    "index" : 3,
     "active" : true
   } ],
   "location" : "src/main/java/tasks",
