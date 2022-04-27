@@ -14,6 +14,16 @@
     "output" : "2429432",
     "index" : 0,
     "active" : true
+  }, {
+    "input" : "hoge fuga",
+    "output" : "error!",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "",
+    "output" : "error!",
+    "index" : 2,
+    "active" : true
   } ],
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",

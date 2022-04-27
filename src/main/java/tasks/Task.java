@@ -14,8 +14,15 @@ public class Task {
     HashMap<Integer, Integer> callCount = new HashMap<>();
 
     public void solve(int testNumber, Scanner in, PrintWriter out) {
-        String seed = in.next();
-        int n = in.nextInt();
+        String seed = "";
+        int n = 0;
+        try {
+            seed = in.next();
+            n = in.nextInt();
+        } catch (Exception e) {
+            out.println("error!");
+            System.exit(1);
+        }
         long ans = calc(n);
         for (Map.Entry<Integer, Integer> entry: callCount.entrySet()) {
             ans += call(seed, entry.getKey()) * entry.getValue();
@@ -43,15 +50,17 @@ public class Task {
     private long call(String seed, int n) {
         try {
             HttpClient client = HttpClient.newHttpClient();
+
             //TODO クエリパラメータを無理やり埋め込む
             HttpRequest req = HttpRequest.newBuilder()
                     .uri(URI.create("http://challenge-server.code-check.io/api/recursive/ask?seed=" + seed + "&n=" + n))
                     .build();
             HttpResponse res = client.send(req, HttpResponse.BodyHandlers.ofString());
+
+            //TODO jsonをパースしてrsultを返す
             return 100;
         } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
+            return 0;
         }
-        return 0;
     }
 }
