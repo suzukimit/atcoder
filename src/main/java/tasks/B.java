@@ -1,36 +1,36 @@
 package tasks;
 
+import java.util.HashSet;
 import java.util.Scanner;
 import java.io.PrintWriter;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 public class B {
-    int n = 0;
-    int k = 0;
-    int[] h;
-    long[] dp;
     public void solve(int testNumber, Scanner in, PrintWriter out) {
-        n = in.nextInt();
-        k = in.nextInt();
-        h = new int[n];
-        dp = new long[n];
+        int n = in.nextInt();
+        int w = in.nextInt();
+        int[] a = new int[n];
+        HashSet<Integer> ans = new HashSet();
         for (int i = 0; i < n; i++) {
-            h[i] = in.nextInt();
-            dp[i] = Long.MAX_VALUE;
+            a[i] = in.nextInt();
+            if (a[i] <= w) ans.add(a[i]);
         }
-        dp[0] = 0;
-        out.println(rec(n-1));
-    }
-
-    public long rec(int i) {
-        if (dp[i] != Long.MAX_VALUE) return dp[i];
-        long[] wk = new long[k];
-        for (int j = 0; j < k; j++) {
-            if (i-j-1 < 0) wk[j] = Long.MAX_VALUE;
-            else wk[j] = Math.abs(h[i] - h[i-j-1]) + rec(i-j-1);
+        for (int i = 0; i < n; i++) {
+            for (int ii = 0; ii < n; ii++) {
+                if (ii == i) continue;
+                int wk = a[i] + a[ii];
+                if (wk <= w) ans.add(wk);
+            }
         }
-        dp[i] = LongStream.of(wk).min().getAsLong();
-        return dp[i];
+        for (int i = 0; i < n; i++) {
+            for (int ii = 0; ii < n; ii++) {
+                if (ii == i) continue;
+                for (int iii = 0; iii < n; iii++) {
+                    if (iii == i || iii == ii) continue;
+                    int wk = a[i] + a[ii] + a[iii];
+                    if (wk <= w) ans.add(wk);
+                }
+            }
+        }
+        out.println(ans.size());
     }
 }

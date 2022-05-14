@@ -10,23 +10,23 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "5 3\n10 30 40 50 20",
-    "output" : "30",
+    "input" : "2 10\n1 3",
+    "output" : "3",
     "index" : 0,
     "active" : true
   }, {
-    "input" : "3 1\n10 20 10",
-    "output" : "20",
+    "input" : "2 1\n2 3",
+    "output" : "0",
     "index" : 1,
     "active" : true
   }, {
-    "input" : "2 100\n10 10",
-    "output" : "0",
+    "input" : "4 12\n3 3 3 3",
+    "output" : "3",
     "index" : 2,
     "active" : true
   }, {
-    "input" : "10 4\n40 10 20 70 80 10 20 70 80 60",
-    "output" : "40",
+    "input" : "7 251\n202 20 5 1 4 2 100",
+    "output" : "48",
     "index" : 3,
     "active" : true
   } ],
@@ -38,7 +38,7 @@
   "checkerParameters" : "",
   "testClasses" : [ ],
   "date" : "",
-  "contestName" : "DP まとめコンテスト",
+  "contestName" : "AtCoder Beginner Contest 251",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",
