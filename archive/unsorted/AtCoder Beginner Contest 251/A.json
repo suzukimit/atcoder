@@ -10,9 +10,14 @@
     "fileName" : "output.txt"
   },
   "tests" : [ {
-    "input" : "122",
-    "output" : "z",
+    "input" : "abc",
+    "output" : "abcabc",
     "index" : 0,
+    "active" : true
+  }, {
+    "input" : "zz",
+    "output" : "zzzzzz",
+    "index" : 1,
     "active" : true
   } ],
   "location" : "src/main/java/tasks",
@@ -23,7 +28,7 @@
   "checkerParameters" : "",
   "testClasses" : [ ],
   "date" : "",
-  "contestName" : "AtCoder Beginner Contest 252",
+  "contestName" : "AtCoder Beginner Contest 251",
   "truncate" : true,
   "inputClass" : "java.util.Scanner",
   "outputClass" : "java.io.PrintWriter",

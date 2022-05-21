@@ -1,36 +1,32 @@
 package tasks;
 
-import java.util.HashSet;
 import java.util.Scanner;
 import java.io.PrintWriter;
 
 public class B {
     public void solve(int testNumber, Scanner in, PrintWriter out) {
         int n = in.nextInt();
-        int w = in.nextInt();
+        int k = in.nextInt();
         int[] a = new int[n];
-        HashSet<Integer> ans = new HashSet();
+        int[] b = new int[n];
+        long max = 0;
         for (int i = 0; i < n; i++) {
             a[i] = in.nextInt();
-            if (a[i] <= w) ans.add(a[i]);
+            max = Math.max(max, a[i]);
         }
-        for (int i = 0; i < n; i++) {
-            for (int ii = 0; ii < n; ii++) {
-                if (ii == i) continue;
-                int wk = a[i] + a[ii];
-                if (wk <= w) ans.add(wk);
-            }
+        for (int i = 0; i < k; i++) {
+            b[i] = in.nextInt();
         }
+
         for (int i = 0; i < n; i++) {
-            for (int ii = 0; ii < n; ii++) {
-                if (ii == i) continue;
-                for (int iii = 0; iii < n; iii++) {
-                    if (iii == i || iii == ii) continue;
-                    int wk = a[i] + a[ii] + a[iii];
-                    if (wk <= w) ans.add(wk);
+            if (a[i] != max) continue;
+            for (int ii = 0; ii < k; ii++) {
+                if (b[ii] == i+1) {
+                    out.println("Yes");
+                    return;
                 }
             }
         }
-        out.println(ans.size());
+        out.println("No");
     }
 }

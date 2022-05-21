@@ -1,5 +1,5 @@
 {
-  "name" : "A",
+  "name" : "D",
   "testType" : "SINGLE",
   "input" : {
     "type" : "STANDARD",
@@ -9,16 +9,11 @@
     "type" : "STANDARD",
     "fileName" : "output.txt"
   },
-  "tests" : [ {
-    "input" : "122",
-    "output" : "z",
-    "index" : 0,
-    "active" : true
-  } ],
+  "tests" : [ ],
   "location" : "src/main/java/tasks",
   "vmArgs" : "-Xmx256m -Xss64m",
   "mainClass" : "Main",
-  "taskClass" : "tasks.A",
+  "taskClass" : "tasks.D",
   "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
   "checkerParameters" : "",
   "testClasses" : [ ],
